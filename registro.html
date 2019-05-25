@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<nav id="navbar">
+ <div class="container">
+   <h1 class="logo" title="Cortes El Regio"><a href="./index.html">Cortes El Regio</a></h1>
+   <ul>
+     <li><a class="current" href="./index.html">Inicio</a></li>
+     <li><a href="./about.html">Nuestros Mejores Cortes</a></li>
+     <li><a href="./contact.html">Contacto Y Ubicación</a></li>
+     <li><a href="./videos.html">Videos de nuestros Cortes</a></li>
+     <li><a href="./registro.html">Cliente Premium</a></li>
+   </ul>
+ </div>
+</nav>
+
+ <head>
+
+   <meta charset="UTF-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+   <meta name="description" content="Cortes El Regio">
+   <meta name="keywords" content="Carnes,Cortes, Frijoles Charros,Queso Flameado">
+   <title> Cortes El Regio | Las mejores carnes</title>
+   <link rel="stylesheet" type="text/css" href="/styles.css">
+   <link rel="stylesheet" type="text/css" media="screen and (max-width: 768px)" href="./mobile.css">
+   <link
+     href="https://fonts.googleapis.com/css?family=Raleway"
+     rel="stylesheet"
+   />
+   <div class="testimonial bg-primary">
+       <img src='https://mlstaticquic-a.akamaihd.net/combo-potpourri-milanesa-asado-chorizo-picada-cerdo-D_NQ_NP_728773-MLU28909490507_122018-F.jpg' alt="Imagen">
+   </div>
+   <style>
+     * {
+       margin-top:15px;
+       box-sizing: border-box;
+       width:100%;
+       font-family:sans-serif;
+       line-height:17px;
+       /*
+       - Talvez quieras agregar "border-box" para "box-sizing" para que el padding no afecte el ancho
+       - Resetear margin y padding
+      */
+     }
+     body {
+       background-color: white;
+       /*
+         -Background color #344a72
+       */
+     }
+     a {
+       text-decoration:none;
+       /*
+       Links subrayados son feos :)
+      */
+     }
+     #container {
+       margin:auto;
+       max-width: 360px;
+
+       /*
+       - Recuerda, margin: auto; en izquierda y derecha centrara el elemento
+       - Tal vez agregar un "max-width" ayude para que sea responsivo
+       - Puede que quieras agregar algo de padding
+       */
+     }
+     .form-wrap {
+       background:red;
+       padding:50px;
+       padding-top:15px;
+       padding-bottom:1px;
+       /*
+         Esta es el area blanca alrededor del formulario y cabecera, etc
+       */
+     }
+     .form-wrap h1,
+     .form-wrap p {
+       text-align:center;
+       /*
+         Tal vez quieras centrar esto
+       */
+     }
+     .form-wrap .form-group {
+       /*
+         Cada label, input esta dentro de un .form-group
+       */
+     }
+     .form-wrap .form-group label {
+     display:block;
+       /*
+         Label debería cambiar a un elemento en bloque (d****y)(block)
+       */
+     }
+     .form-wrap .form-group input {
+       width:100%;
+       padding:10px;
+       border-radius:5px;
+       /*
+         Inputs deberían tener el ancho del 100% a traves del .form-wrap y algo de padding
+       */
+     }
+     .form-wrap button {
+       background-color:#49c1a2;
+       width:100%;
+       display:block;
+       margin-top:10px;
+       padding:9px;
+       /*
+         Button debería hacer lo mismo que los input 100% y mostrarse en bloque(block)
+         Background color para el button es #49c1a2
+       */
+     }
+     .form-wrap button:hover {
+       color:#37a08e;
+       /*
+         Hover(pasar por encima) background color para el button es #37a08e
+       */
+     }
+     .form-wrap .bottom-text {
+       font-size: .75em;
+       /*
+         El texto del fondo es más pequeño
+       */
+     }
+     footer {
+       text-align:center;
+       /*
+       Debería centrarse
+       Should be centered
+      */
+     }
+     footer a {
+       color:#49c1a2;
+       /*
+         El color de sus links #49c1a2*/
+     }
+   </style>
+ </head>
+ <body>
+   <div id="container">
+     <div class="form-wrap">
+       <h1>Regístrate</h1>
+       <p>Es gratis solo tomará unos minutos</p>
+       <form>
+         <div class="form-group">
+           <label for="first-name">Nombre</label>
+           <input type="text" name="firstName" id="first-name" />
+         </div>
+         <div class="form-group">
+           <label for="last-name">Apellido</label>
+           <input type="text" name="lastName" id="last-name" />
+         </div>
+         <div class="form-group">
+           <label for="email">Email</label>
+           <input type="email" name="email" id="email" />
+         </div>
+         <div class="form-group">
+           <label for="password">Contraseña</label>
+           <input type="password" name="password" id="password" />
+         </div>
+         <div class="form-group">
+           <label for="password2">Confirmar Contraseña</label>
+           <input type="password" name="pasword2" id="password2" />
+         </div>
+         <button type="submit" class="btn">Regístrate</button>
+         <p class="bottom-text">
+           Presionando Regístrate, estas de acuerdo a
+           <a href="#">Términos & Condiciones</a> y
+           <a href="#">Política de Privacidad</a>
+         </p>
+       </form>
+     </div>
+     <footer>
+       <p>Ya tienes cuenta? <a href="#">Inicia Sesión aquí</a></p>
+       <p>Deportes Monterrey &copy; 2019, Todos los derechos Reservados</p>
+     </footer>
+   </div>
+ </body>
+</html>
